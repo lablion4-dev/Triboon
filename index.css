@@ -1,0 +1,142 @@
+/*
+  This project uses Tailwind via CDN (see [index.html](index.html:1)).
+  This file is for the small set of custom utilities/classes used by the components.
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f2e8cf;
+  color: #2b211e;
+}
+
+/* Custom scrollbar (webkit) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f2e8cf;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bc6c25;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #39ff14;
+}
+
+/* Hide scrollbars but keep scroll functionality */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* 3D helpers (Tailwind CDN doesn't ship 3D transform utilities by default) */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Tilt effect used in Hero card */
+.ritual-tilt {
+  will-change: transform;
+}
+
+.group:hover .ritual-tilt {
+  transform: rotateY(6deg) rotateX(6deg) scale(1.05);
+}
+
+/* Button cut shape */
+.clip-path-button {
+  clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%, 4% 50%);
+}
+
+/* Recharts tooltip customization moved out of inline styles */
+.recharts-default-tooltip {
+  background-color: #fbf8f3;
+  border: 1px solid #bc6c25;
+  border-radius: 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-family: 'Space Mono', monospace;
+  color: #2b211e;
+}
+
+.recharts-tooltip-item {
+  color: #2b211e;
+  font-family: 'Space Mono', monospace;
+}
+
+/* Marquee auto-scroll for artefacts */
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.marquee__inner {
+  display: flex;
+  gap: 2rem;
+  animation: marquee 24s linear infinite;
+}
+.marquee__inner > * {
+  flex: 0 0 auto;
+}
+.marquee:hover .marquee__inner,
+.marquee__inner:focus-within {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Gentle pattern scroll for background */
+.pattern-scroll svg {
+  animation: pattern-scroll 40s linear infinite;
+}
+
+@keyframes pattern-scroll {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-12%); }
+  100% { transform: translateX(0); }
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .marquee__inner,
+  .pattern-scroll svg {
+    animation: none !important;
+  }
+}
+
+/* Default tribal pattern opacity */
+.tribal-pattern {
+  opacity: 0.05;
+}
+
+/* Artefact viewer modal */
+.artefact-modal {
+  z-index: 60;
+}
+.artefact-modal .modal-content img {
+  max-height: 60vh;
+}
+.artefact-modal button[aria-label="Close"] {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+}
+
+
