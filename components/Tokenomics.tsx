@@ -1,7 +1,5 @@
 import React from 'react';
 import SectionTitle from './SectionTitle';
-import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
-import { TOKEN_DISTRIBUTION } from '../constants';
 
 const Tokenomics: React.FC = () => {
   return (
@@ -11,15 +9,15 @@ const Tokenomics: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10">
         <SectionTitle title="Tribal Ledger" subtitle="Tokenomics" />
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-4xl mx-auto">
           
           {/* Stats Column */}
           <div className="space-y-8 font-mono">
             
             {/* Token Facts */}
             <div className="bg-tribal-paper border border-tribal-ink/5 p-8 shadow-sm hover:border-tribal-earth transition-colors">
-              <p className="text-tribal-clay text-sm uppercase mb-2">Token Facts</p>
-              <div className="space-y-3">
+              <p className="text-tribal-clay text-sm uppercase mb-4">Token Facts</p>
+              <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="text-xl text-tribal-ink font-bold">TRIBOON</h4>
                   <p className="text-tribal-earth text-xs">Token Name</p>
@@ -41,7 +39,7 @@ const Tokenomics: React.FC = () => {
             </div>
 
             {/* Grid Stats */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-tribal-paper border border-tribal-ink/5 p-6 shadow-sm">
                 <p className="text-tribal-clay text-xs uppercase mb-1">Tax</p>
                 <h4 className="text-2xl text-tribal-ink font-bold">0/0</h4>
@@ -54,52 +52,16 @@ const Tokenomics: React.FC = () => {
               </div>
             </div>
 
-            {/* Legend */}
-             <div className="space-y-4 pt-4">
-              {TOKEN_DISTRIBUTION.map((item, index) => (
-                <div key={index} className="flex items-center justify-between border-b border-tribal-ink/10 pb-2">
-                  <div className="flex items-center gap-3">
-                    {/* Use a small SVG circle so we can set the fill color via the `fill` prop (not inline CSS) */}
-                    <svg className="w-3 h-3 shadow-sm" viewBox="0 0 8 8" aria-hidden>
-                      <circle cx="4" cy="4" r="4" fill={item.fill} />
-                    </svg>
-                    <span className="text-tribal-ink uppercase text-sm tracking-wider">{item.name}</span>
-                  </div>
-                  <span className="font-bold text-tribal-ink">{item.value}%</span>
-                </div>
-              ))}
+            {/* Cultural Message */}
+            <div className="text-center bg-tribal-earth/10 border border-tribal-earth/30 p-6 rounded-lg">
+              <p className="font-display font-bold text-tribal-ink text-lg uppercase tracking-wide mb-2">
+                "Culture Before Hype"
+              </p>
+              <p className="font-mono text-tribal-ink/70 text-sm">
+                Preserving African heritage on Solana blockchain
+              </p>
             </div>
 
-          </div>
-
-          {/* Chart Column */}
-          <div className="h-[400px] w-full relative flex items-center justify-center">
-             <div className="absolute inset-0 bg-tribal-earth/5 rounded-full blur-3xl"></div>
-             <ResponsiveContainer width="100%" height="100%" minWidth={0} minHeight={0}>
-                <PieChart>
-                  <Pie
-                    data={TOKEN_DISTRIBUTION}
-                    cx="50%"
-                    cy="50%"
-                    innerRadius={80}
-                    outerRadius={140}
-                    paddingAngle={5}
-                    dataKey="value"
-                    stroke="none"
-                  >
-                    {TOKEN_DISTRIBUTION.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={entry.fill} className="outline-none focus:outline-none hover:opacity-80 transition-opacity duration-300" />
-                    ))}
-                  </Pie>
-                  <Tooltip />
-                </PieChart>
-             </ResponsiveContainer>
-             
-             {/* Center Text in Donut */}
-             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none">
-                <p className="text-tribal-clay font-mono text-xs uppercase">Allocation</p>
-                <p className="text-tribal-ink font-display font-bold text-2xl animate-scale-pulse">100%</p>
-             </div>
           </div>
 
         </div>
