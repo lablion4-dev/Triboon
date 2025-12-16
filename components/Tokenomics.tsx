@@ -16,6 +16,21 @@ const Tokenomics: React.FC = () => {
           {/* Stats Column */}
           <div className="space-y-8 font-mono">
             
+            {/* Token Facts */}
+            <div className="bg-tribal-paper border border-tribal-ink/5 p-8 shadow-sm hover:border-tribal-earth transition-colors">
+              <p className="text-tribal-clay text-sm uppercase mb-2">Token Facts</p>
+              <div className="space-y-3">
+                <div>
+                  <h4 className="text-xl text-tribal-ink font-bold">TRIBOON</h4>
+                  <p className="text-tribal-earth text-xs">Token Name</p>
+                </div>
+                <div>
+                  <h4 className="text-xl text-tribal-ink font-bold">Solana</h4>
+                  <p className="text-tribal-earth text-xs">Blockchain</p>
+                </div>
+              </div>
+            </div>
+
             {/* Supply Card */}
             <div className="bg-tribal-paper border border-tribal-ink/5 p-8 shadow-sm hover:border-tribal-earth transition-colors">
               <p className="text-tribal-clay text-sm uppercase mb-2">Total Supply</p>
@@ -34,7 +49,7 @@ const Tokenomics: React.FC = () => {
               </div>
               <div className="bg-tribal-paper border border-tribal-ink/5 p-6 shadow-sm">
                 <p className="text-tribal-clay text-xs uppercase mb-1">Liquidity</p>
-                <h4 className="text-2xl text-tribal-earth font-bold">BURNT</h4>
+                <h4 className="text-lg text-tribal-earth font-bold">TRIBOON/SOL</h4>
                 <p className="text-xs text-tribal-ink/50 mt-1">Offering to Ancestors</p>
               </div>
             </div>

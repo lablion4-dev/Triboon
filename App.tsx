@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Manifesto from './components/Manifesto';
 import Witnesses from './components/Witnesses';
+import About from './components/About';
 import Artefacts from './components/Artefacts';
 import Tokenomics from './components/Tokenomics';
 import Footer from './components/Footer';
@@ -25,6 +26,7 @@ const App: React.FC = () => {
           <Hero />
           <Manifesto />
           <Witnesses />
+          <About />
           <Artefacts />
           <Tokenomics />
         </main>
