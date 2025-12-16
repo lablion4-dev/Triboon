@@ -11,7 +11,7 @@ export const IMAGES = {
   //
   // To avoid broken external links, we ship local placeholders by default.
   // Replace these with your official files when ready.
-  MASK_HERO: envLogo ?? "/assets/logo.svg",
+  MASK_HERO: envLogo ?? "/assets/triboonlogo.png",
   // Use user's provided image for Scarification
   MASK_GOLD: "/assets/offlogo.png",
   LOGO_ICON: "/assets/logo-icon.svg",

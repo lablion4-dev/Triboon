@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && npx gh-pages -d dist",
+    "deploy:check": "npm run build && echo 'Build completed. Use deploy script to push to GitHub Pages.'"
   },
   "dependencies": {
     "lucide-react": "^0.561.0",
