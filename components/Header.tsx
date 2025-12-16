@@ -1,5 +1,6 @@
 import React from 'react';
 import { IMAGES, SOCIAL_LINKS } from '../constants';
+import SoundControl from './SoundControl';
 
 const Header: React.FC = () => {
   return (
@@ -42,6 +43,9 @@ const Header: React.FC = () => {
             >
               Solscan
             </a>
+
+            {/* Sound Control */}
+            <SoundControl />
 
             {/* Social Icons */}
             <div className="flex items-center gap-3 pl-2 border-l border-tribal-ink/10">
@@ -104,4 +108,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-
