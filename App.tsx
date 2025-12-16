@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Manifesto from './components/Manifesto';
+import Witnesses from './components/Witnesses';
 import Artefacts from './components/Artefacts';
 import Tokenomics from './components/Tokenomics';
 import Footer from './components/Footer';
@@ -23,6 +24,7 @@ const App: React.FC = () => {
         <main className="relative z-10 pt-16">
           <Hero />
           <Manifesto />
+          <Witnesses />
           <Artefacts />
           <Tokenomics />
         </main>

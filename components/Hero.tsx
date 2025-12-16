@@ -35,9 +35,9 @@ const Hero: React.FC = () => {
                    <div className="absolute inset-0 bg-noise opacity-20 mix-blend-overlay"></div>
                    
                    <img 
-                      src={IMAGES.MASK_HERO} 
-                      alt="Triboon Official Logo" 
-                      className="w-full h-full object-cover md:object-contain p-2"
+                     src={IMAGES.MASK_HERO} 
+                     alt="Triboon Official Logo" 
+                     className="w-full h-full object-cover md:object-contain p-2"
                    />
 
                    {/* Glossy Reflection */}
@@ -59,6 +59,10 @@ const Hero: React.FC = () => {
         <h2 className="font-mono text-lg md:text-2xl text-tribal-earth mb-2 uppercase tracking-widest font-bold">
           The Beat of the Blockchain
         </h2>
+        
+        <p className="font-display text-tribal-ink/70 text-sm md:text-lg mb-4 tracking-wide max-w-2xl">
+          Great apes are silent witnesses of African history. They have lived alongside African tribes for thousands of years, observing migrations, rituals, scarifications, masks, rhythms and stories.
+        </p>
         
         <p className="font-display text-tribal-ink/70 text-sm md:text-lg mb-10 tracking-wide">
           From the jungle to the blockchain.
