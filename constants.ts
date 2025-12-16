@@ -23,7 +23,7 @@ export const IMAGES = {
 
 export const TOKEN_DISTRIBUTION: TokenDistribution[] = [
   { name: 'Community', value: 80, fill: '#bc6c25' }, // Terracotta
-  { name: 'Ecosystem & CEX', value: 10, fill: '#39ff14' }, // Neon Green
+  { name: 'Ecosystem and Development', value: 10, fill: '#39ff14' }, // Neon Green
   { name: 'Marketing', value: 10, fill: '#bc13fe' }, // Neon Purple
 ];
 
