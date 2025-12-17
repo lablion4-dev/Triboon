@@ -3,6 +3,13 @@ import { IMAGES, SOCIAL_LINKS } from '../constants';
 import SoundControl from './SoundControl';
 
 const Header: React.FC = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-40">
       <div className="bg-tribal-light/70 backdrop-blur-md border-b border-tribal-ink/10">
@@ -23,6 +30,16 @@ const Header: React.FC = () => {
               </div>
             </div>
           </a>
+
+          {/* Navigation */}
+          <div className="hidden lg:flex items-center gap-4">
+            <button
+              onClick={() => scrollToSection('tribes-discovery')}
+              className="px-4 py-2 text-tribal-ink font-mono text-xs uppercase tracking-widest hover:bg-tribal-ink hover:text-white transition-colors rounded-md"
+            >
+              Discover Tribes
+            </button>
+          </div>
 
           {/* Links */}
           <div className="flex items-center gap-3">

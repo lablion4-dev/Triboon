@@ -37,7 +37,7 @@ const TribesDiscovery: React.FC = () => {
   };
 
   return (
-    <section className="relative py-24 bg-gradient-to-b from-[#e8dcb5] to-[#d4c4a8] overflow-hidden">
+    <section id="tribes-discovery" className="relative py-24 bg-gradient-to-b from-[#e8dcb5] to-[#d4c4a8] overflow-hidden">
       <TribalPattern opacity={0.06} className="text-tribal-earth" />
       
       <div className="container mx-auto px-6 md:px-12 relative z-10">
