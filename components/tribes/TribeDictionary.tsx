@@ -82,6 +82,7 @@ const TribeDictionary: React.FC<TribeDictionaryProps> = ({ onTribeSelect }) => {
               <select
                 value={selectedRegion}
                 onChange={(e) => setSelectedRegion(e.target.value)}
+                title="Filter tribes by African region"
                 className="w-full px-3 py-2 bg-tribal-ink/5 border border-tribal-ink/20 rounded font-mono text-tribal-ink focus:outline-none focus:border-tribal-earth"
               >
                 <option value="">All Regions</option>
@@ -101,6 +102,7 @@ const TribeDictionary: React.FC<TribeDictionaryProps> = ({ onTribeSelect }) => {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as 'name' | 'country' | 'region')}
+                title="Sort tribes by name, country, or region"
                 className="w-full px-3 py-2 bg-tribal-ink/5 border border-tribal-ink/20 rounded font-mono text-tribal-ink focus:outline-none focus:border-tribal-earth"
               >
                 <option value="name">Tribe Name</option>
