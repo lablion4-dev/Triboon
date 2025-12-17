@@ -19,6 +19,7 @@ export const IMAGES = {
   LOGO_TEXT: "/assets/logo-text.svg",
   LOGO_FULL: "/assets/logo-full.svg",
   TOTEM: "/assets/totem.png",
+  RYTHM: "/assets/rythm.png",
 };
 
 export const TOKEN_DISTRIBUTION: TokenDistribution[] = [
@@ -50,7 +51,7 @@ export const ARTEFACTS: Artefact[] = [
     id: 4,
     title: "The Rhythm",
     description: "The heartbeat of the chain. Every block is a beat, every transaction a dance step.",
-    imageUrl: IMAGES.LOGO_FULL
+    imageUrl: IMAGES.RYTHM
   }
 ];
 
