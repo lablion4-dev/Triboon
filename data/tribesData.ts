@@ -189,6 +189,97 @@ export const COUNTRIES: Country[] = [
     ]
   },
 
+  // Central Africa
+  {
+    id: 'cameroon',
+    name: 'Cameroon',
+    region: 'central',
+    tribes: [
+      {
+        id: 'bamileke',
+        name: 'Bamileke',
+        country: 'Cameroon',
+        region: 'Central Africa',
+        population: '3.5+ million',
+        language: 'Bamileke',
+        description: 'The Bamileke are one of Cameroon\'s largest ethnic groups, renowned for their business acumen, traditional architecture, and rich cultural heritage in the Western Highlands.',
+        history: 'The Bamileke have inhabited the Western Highlands of Cameroon for centuries, developing sophisticated agricultural techniques and complex social structures around traditional kingdoms.',
+        culture: 'Bamileke culture emphasizes entrepreneurship, traditional architecture, and elaborate ceremonial practices. They are known for their traditional houses and marketplace culture.',
+        traditions: ['Traditional Kingship', 'Agricultural Ceremonies', 'Market Culture', 'Architectural Traditions'],
+        art: ['Traditional Architecture', 'Wood Carving', 'Textile Weaving', 'Pottery', 'Mask Making'],
+        gallery: ['bamileke-architecture-1', 'bamileke-culture-1', 'bamileke-art-1'],
+        guardian: 'bamileke-guardian'
+      },
+      {
+        id: 'bafia',
+        name: 'Bafia',
+        country: 'Cameroon',
+        region: 'Central Africa',
+        population: '800,000',
+        language: 'Bafia',
+        description: 'The Bafia people are indigenous to the central region of Cameroon, known for their traditional masks, ceremonial practices, and deep connection to the forest.',
+        history: 'The Bafia have lived in central Cameroon for centuries, maintaining their traditional lifestyle and cultural practices in harmony with the forest environment.',
+        culture: 'Bafia culture centers around traditional ceremonies, mask traditions, and forest-based spiritual practices. They maintain close ties to ancestral lands.',
+        traditions: ['Forest Ceremonies', 'Traditional Masking', 'Ancestral Worship', 'Initiation Rites'],
+        art: ['Mask Making', 'Wood Carving', 'Traditional Tools', 'Body Art', 'Ceremonial Objects'],
+        gallery: ['bafia-mask-1', 'bafia-culture-1', 'bafia-tradition-1'],
+        guardian: 'bafia-guardian'
+      },
+      {
+        id: 'fang',
+        name: 'Fang',
+        country: 'Cameroon',
+        region: 'Central Africa',
+        population: '3+ million',
+        language: 'Fang',
+        description: 'The Fang are one of Central Africa\'s largest ethnic groups, known for their traditional masks, ancestor worship, and sophisticated political structures.',
+        history: 'The Fang migrated from the eastern regions of Central Africa and established powerful kingdoms throughout the area, developing complex social and political systems.',
+        culture: 'Fang culture emphasizes ancestor worship, traditional masks, and elaborate ceremonial practices. They are renowned for their spiritual beliefs and artistic traditions.',
+        traditions: ['Ancestor Worship', 'Traditional Masking', 'Political Ceremonies', 'Initiation Rites'],
+        art: ['Mask Making', 'Sculpture', 'Traditional Weapons', 'Body Art', 'Ceremonial Objects'],
+        gallery: ['fang-mask-1', 'fang-sculpture-1', 'fang-culture-1'],
+        guardian: 'fang-guardian'
+      }
+    ]
+  },
+  {
+    id: 'congo',
+    name: 'Democratic Republic of Congo',
+    region: 'central',
+    tribes: [
+      {
+        id: 'bantu',
+        name: 'Bantu Peoples',
+        country: 'Democratic Republic of Congo',
+        region: 'Central Africa',
+        population: '30+ million',
+        language: 'Lingala, Kikongo, Swahili',
+        description: 'The Bantu peoples of Central Africa maintain rich traditions of mask-making, sculpture, and spiritual practices in harmony with the rainforest.',
+        history: 'The Bantu expansion brought ironworking, agriculture, and complex social systems to Central Africa, creating diverse kingdoms and societies.',
+        culture: 'Central African Bantu cultures emphasize mask traditions, ancestral worship, and sophisticated sculpture. Known for their rainforest adaptations.',
+        traditions: ['Mask Ceremonies', 'Ancestral Worship', 'Traditional Healing', 'Initiation Rites'],
+        art: ['Mask Making', 'Sculpture', 'Traditional Weapons', 'Body Art', 'Musical Instruments'],
+        gallery: ['bantu-mask-1', 'bantu-sculpture-1', 'bantu-culture-1'],
+        guardian: 'bantu-guardian'
+      },
+      {
+        id: 'pygmee',
+        name: 'Pygmee Peoples',
+        country: 'Central Africa',
+        region: 'Central Africa',
+        population: '500,000',
+        language: 'Various Bantu and Ubangian languages',
+        description: 'The Pygmee peoples are the indigenous hunter-gatherers of the Central African rainforest, among the world\'s oldest continuous cultures with profound forest knowledge.',
+        history: 'The Pygmee peoples have lived in the Central African rainforest for over 60,000 years, developing sophisticated forest survival techniques and spiritual practices.',
+        culture: 'Pygmee culture centers around forest spirituality, traditional hunting, and intimate knowledge of rainforest ecology. They maintain egalitarian societies and rich oral traditions.',
+        traditions: ['Forest Spirituality', 'Traditional Hunting', 'Egalitarian Society', 'Forest Medicine'],
+        art: ['Traditional Tools', 'Body Painting', 'Musical Instruments', 'Forest Crafts', 'Spiritual Objects'],
+        gallery: ['pygmee-hunting-1', 'pygmee-culture-1', 'pygmee-tradition-1'],
+        guardian: 'pygmee-guardian'
+      }
+    ]
+  },
+
   // Southern Africa
   {
     id: 'south-africa',
@@ -224,30 +315,6 @@ export const COUNTRIES: Country[] = [
         art: ['Rock Paintings', 'Traditional Tools', 'Body Art', 'Musical Instruments', 'Dance'],
         gallery: ['san-rockart-1', 'san-culture-1', 'san-tradition-1'],
         guardian: 'san-guardian'
-      }
-    ]
-  },
-
-  // Central Africa
-  {
-    id: 'congo',
-    name: 'Democratic Republic of Congo',
-    region: 'central',
-    tribes: [
-      {
-        id: 'bantu',
-        name: 'Bantu Peoples',
-        country: 'Democratic Republic of Congo',
-        region: 'Central Africa',
-        population: '30+ million',
-        language: 'Lingala, Kikongo, Swahili',
-        description: 'The Bantu peoples of Central Africa maintain rich traditions of mask-making, sculpture, and spiritual practices in harmony with the rainforest.',
-        history: 'The Bantu expansion brought ironworking, agriculture, and complex social systems to Central Africa, creating diverse kingdoms and societies.',
-        culture: 'Central African Bantu cultures emphasize mask traditions, ancestral worship, and sophisticated sculpture. Known for their rainforest adaptations.',
-        traditions: ['Mask Ceremonies', 'Ancestral Worship', 'Traditional Healing', 'Initiation Rites'],
-        art: ['Mask Making', 'Sculpture', 'Traditional Weapons', 'Body Art', 'Musical Instruments'],
-        gallery: ['bantu-mask-1', 'bantu-sculpture-1', 'bantu-culture-1'],
-        guardian: 'bantu-guardian'
       }
     ]
   },
