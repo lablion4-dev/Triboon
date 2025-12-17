@@ -20,6 +20,7 @@ export const IMAGES = {
   LOGO_FULL: "/assets/logo-full.svg",
   TOTEM: "/assets/totem.png",
   RYTHM: "/assets/rythm.png",
+  SCARIFICATION: "/assets/Scarification.png",
 };
 
 export const TOKEN_DISTRIBUTION: TokenDistribution[] = [
@@ -39,7 +40,7 @@ export const ARTEFACTS: Artefact[] = [
     id: 2,
     title: "The Scarification",
     description: "Marks of endurance. Our history is written on the blockchain, permanent and undeniable.",
-    imageUrl: IMAGES.MASK_GOLD
+    imageUrl: IMAGES.SCARIFICATION
   },
   {
     id: 3,
